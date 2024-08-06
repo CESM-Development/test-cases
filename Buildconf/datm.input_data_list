@@ -1,0 +1,8 @@
+model_meshfile = /glade/campaign/cesm/cesmdata/inputdata/share/meshes/fv1.9x2.5_141008_ESMFmesh.nc
+model_maskfile = /glade/campaign/cesm/cesmdata/inputdata/share/meshes/fv1.9x2.5_141008_ESMFmesh.nc
+factorfn_data = /glade/campaign/cesm/cesmdata/inputdata/atm/datm7/CORE2/COREv2.correction_factors.T62.121007.nc
+factorfn_mesh = /glade/campaign/cesm/cesmdata/inputdata/share/meshes/T62_040121_ESMFmesh_c20190714.nc
+mesh = /glade/campaign/cesm/cesmdata/inputdata/share/meshes/T62_040121_ESMFmesh_c20190714.nc
+file1 = /glade/campaign/cesm/cesmdata/inputdata/atm/datm7/NYF/nyf.giss.T62.051007.nc
+file1 = /glade/campaign/cesm/cesmdata/inputdata/atm/datm7/NYF/nyf.gxgxs.T62.051007.nc
+file1 = /glade/campaign/cesm/cesmdata/inputdata/atm/datm7/NYF/nyf.ncep.T62.050923.nc

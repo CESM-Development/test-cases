@@ -1,0 +1,27 @@
+&const_forcing_nml
+  dn10 = 1.204
+  peak_lwdn = 450.0
+  peak_swdn = 330.0
+  q = 0.0
+  slp = 101325.0
+  t = 273.15
+  u = 0.0
+  v = 0.0
+/
+&datm_nml
+  datamode = "CORE2_NYF"
+  factorfn_data = "/glade/campaign/cesm/cesmdata/inputdata/atm/datm7/CORE2/COREv2.correction_factors.T62.121007.nc"
+  factorfn_mesh = "/glade/campaign/cesm/cesmdata/inputdata/share/meshes/T62_040121_ESMFmesh_c20190714.nc"
+  flds_co2 = .false.
+  flds_presaero = .false.
+  flds_presndep = .false.
+  flds_preso3 = .false.
+  flds_wiso = .false.
+  iradsw = 1
+  model_maskfile = "/glade/campaign/cesm/cesmdata/inputdata/share/meshes/fv1.9x2.5_141008_ESMFmesh.nc"
+  model_meshfile = "/glade/campaign/cesm/cesmdata/inputdata/share/meshes/fv1.9x2.5_141008_ESMFmesh.nc"
+  nx_global = 144
+  ny_global = 96
+  restfilm = "null"
+  skip_restart_read = .false.
+/

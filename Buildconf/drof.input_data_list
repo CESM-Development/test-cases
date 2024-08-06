@@ -1,0 +1,4 @@
+model_meshfile = /glade/campaign/cesm/cesmdata/inputdata/share/meshes/rx1_nomask_181022_ESMFmesh.nc
+model_maskfile = /glade/campaign/cesm/cesmdata/inputdata/share/meshes/rx1_nomask_181022_ESMFmesh.nc
+mesh = /glade/campaign/cesm/cesmdata/inputdata/lnd/dlnd7/RX1/runoff.daitren.annual_ESMFmesh_120520.nc
+file1 = /glade/campaign/cesm/cesmdata/inputdata/lnd/dlnd7/RX1/runoff.daitren.annual.20190226.nc

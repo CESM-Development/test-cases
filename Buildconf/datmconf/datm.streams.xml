@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<file id="stream" version="2.0">
+
+  <stream_info name="CORE2_NYF.GISS">
+   <taxmode>cycle</taxmode>
+   <tintalgo>linear</tintalgo>
+   <readmode>single</readmode>
+   <mapalgo>bilinear</mapalgo>
+   <dtlimit>1.5</dtlimit>
+   <year_first>1</year_first>
+   <year_last>1</year_last>
+   <year_align>1</year_align>
+   <vectors>null</vectors>
+   <meshfile>/glade/campaign/cesm/cesmdata/inputdata/share/meshes/T62_040121_ESMFmesh_c20190714.nc</meshfile>
+   <lev_dimname>null</lev_dimname>
+   <datafiles>
+      <file>/glade/campaign/cesm/cesmdata/inputdata/atm/datm7/NYF/nyf.giss.T62.051007.nc</file>
+   </datafiles>
+   <datavars>
+      <var>lwdn  Faxa_lwdn</var>
+      <var>swdn  Faxa_swdn</var>
+      <var>swup  Faxa_swup</var>
+   </datavars>
+   <offset>0</offset>
+  </stream_info>
+
+
+  <stream_info name="CORE2_NYF.GXGXS">
+   <taxmode>cycle</taxmode>
+   <tintalgo>linear</tintalgo>
+   <readmode>single</readmode>
+   <mapalgo>bilinear</mapalgo>
+   <dtlimit>1.5</dtlimit>
+   <year_first>1</year_first>
+   <year_last>1</year_last>
+   <year_align>1</year_align>
+   <vectors>null</vectors>
+   <meshfile>/glade/campaign/cesm/cesmdata/inputdata/share/meshes/T62_040121_ESMFmesh_c20190714.nc</meshfile>
+   <lev_dimname>null</lev_dimname>
+   <datafiles>
+      <file>/glade/campaign/cesm/cesmdata/inputdata/atm/datm7/NYF/nyf.gxgxs.T62.051007.nc</file>
+   </datafiles>
+   <datavars>
+      <var>prc  Faxa_prec</var>
+   </datavars>
+   <offset>0</offset>
+  </stream_info>
+
+
+  <stream_info name="CORE2_NYF.NCEP">
+   <taxmode>cycle</taxmode>
+   <tintalgo>linear</tintalgo>
+   <readmode>single</readmode>
+   <mapalgo>bilinear</mapalgo>
+   <dtlimit>1.5</dtlimit>
+   <year_first>1</year_first>
+   <year_last>1</year_last>
+   <year_align>1</year_align>
+   <vectors>Sa_u:Sa_v</vectors>
+   <meshfile>/glade/campaign/cesm/cesmdata/inputdata/share/meshes/T62_040121_ESMFmesh_c20190714.nc</meshfile>
+   <lev_dimname>null</lev_dimname>
+   <datafiles>
+      <file>/glade/campaign/cesm/cesmdata/inputdata/atm/datm7/NYF/nyf.ncep.T62.050923.nc</file>
+   </datafiles>
+   <datavars>
+      <var>dn10  Sa_dens</var>
+      <var>slp_  Sa_pslv</var>
+      <var>q_10  Sa_shum</var>
+      <var>t_10  Sa_tbot</var>
+      <var>u_10  Sa_u</var>
+      <var>v_10  Sa_v</var>
+   </datavars>
+   <offset>0</offset>
+  </stream_info>
+
+</file>

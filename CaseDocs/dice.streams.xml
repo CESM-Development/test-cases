@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<file id="stream" version="2.0">
+
+  <stream_info name="ssmi_nyf">
+   <taxmode>cycle</taxmode>
+   <tintalgo>linear</tintalgo>
+   <readmode>single</readmode>
+   <mapalgo>bilinear</mapalgo>
+   <dtlimit>1.5</dtlimit>
+   <year_first>1</year_first>
+   <year_last>1</year_last>
+   <year_align>1</year_align>
+   <vectors>null</vectors>
+   <meshfile>/glade/campaign/cesm/cesmdata/inputdata/ice/dice7/SSMI/ssmi.ifrac.0.5x0.5_ESMFmesh_120520.nc</meshfile>
+   <lev_dimname>null</lev_dimname>
+   <datafiles>
+      <file>/glade/campaign/cesm/cesmdata/inputdata/ice/dice7/SSMI/ssmi_ifrac.clim.x0.5.090319.nc</file>
+   </datafiles>
+   <datavars>
+      <var>ifrac  Si_ifrac</var>
+   </datavars>
+   <offset>0</offset>
+  </stream_info>
+
+</file>

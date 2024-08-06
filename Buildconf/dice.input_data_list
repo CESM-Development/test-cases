@@ -1,0 +1,4 @@
+model_meshfile = /glade/campaign/cesm/cesmdata/inputdata/share/meshes/gx1v7_151008_ESMFmesh.nc
+model_maskfile = /glade/campaign/cesm/cesmdata/inputdata/share/meshes/gx1v7_151008_ESMFmesh.nc
+mesh = /glade/campaign/cesm/cesmdata/inputdata/ice/dice7/SSMI/ssmi.ifrac.0.5x0.5_ESMFmesh_120520.nc
+file1 = /glade/campaign/cesm/cesmdata/inputdata/ice/dice7/SSMI/ssmi_ifrac.clim.x0.5.090319.nc
