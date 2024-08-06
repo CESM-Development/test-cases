@@ -1,0 +1,44 @@
+2024-08-06 13:20:24: ./create_newcase --case foo5 --compset A --res f19_g17 --run-unsupported
+ ---------------------------------------------------
+2024-08-06 13:20:24: Compset longname is 2000_DATM%NYF_SLND_DICE%SSMI_DOCN%DOM_DROF%NYF_SGLC_SWAV_SESP
+ ---------------------------------------------------
+2024-08-06 13:20:24: Compset specification file is /glade/work/jedwards/sandboxes/cesm3_0_x/components/cmeps/cime_config/config_compsets.xml
+ ---------------------------------------------------
+2024-08-06 13:20:24: Pes     specification file is /glade/work/jedwards/sandboxes/cesm3_0_x/components/cmeps/cime_config/config_pes.xml
+ ---------------------------------------------------
+2024-08-06 13:20:24: Forcing is 1972-2004
+ ---------------------------------------------------
+2024-08-06 13:20:24: Using 1 coupler instances
+ ---------------------------------------------------
+2024-08-06 13:20:24: Component ATM is  Data driven ATM COREv2 normal year forcing
+ ---------------------------------------------------
+2024-08-06 13:20:24: ATM_GRID is 1.9x2.5
+ ---------------------------------------------------
+2024-08-06 13:20:24: Component LND is Stub land component
+ ---------------------------------------------------
+2024-08-06 13:20:24: LND_GRID is null
+ ---------------------------------------------------
+2024-08-06 13:20:24: Component ICE is dice mode is ssmi
+ ---------------------------------------------------
+2024-08-06 13:20:24: ICE_GRID is gx1v7
+ ---------------------------------------------------
+2024-08-06 13:20:24: Component OCN is DOCN   prescribed ocean mode
+ ---------------------------------------------------
+2024-08-06 13:20:24: OCN_GRID is gx1v7
+ ---------------------------------------------------
+2024-08-06 13:20:24: Component ROF is Data runoff modelCOREv2 normal year forcing:
+ ---------------------------------------------------
+2024-08-06 13:20:24: ROF_GRID is rx1
+ ---------------------------------------------------
+2024-08-06 13:20:24: Component GLC is Stub glacier (land ice) component
+ ---------------------------------------------------
+2024-08-06 13:20:24: GLC_GRID is null
+ ---------------------------------------------------
+2024-08-06 13:20:24: Component WAV is Stub wave component
+ ---------------------------------------------------
+2024-08-06 13:20:24: WAV_GRID is null
+ ---------------------------------------------------
+2024-08-06 13:20:24: Component ESP is Stub external system processing (ESP) component
+ ---------------------------------------------------
+2024-08-06 13:20:24: ESP_GRID is None
+ ---------------------------------------------------
