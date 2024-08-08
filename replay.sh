@@ -14,3 +14,5 @@ cd "${CASEDIR}"
 
 ./xmlchange CASE_GIT_REPOSITORY=git@github.com:CESM-Development/test-cases.git
 
+./case.build
+
