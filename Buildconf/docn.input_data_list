@@ -1,0 +1,4 @@
+model_meshfile = /fs/cgd/csm/inputdata/share/meshes/ne30pg3_ESMFmesh_cdf5_c20211018.nc
+model_maskfile = /fs/cgd/csm/inputdata/share/meshes/gx1v7_151008_ESMFmesh.nc
+mesh = /fs/cgd/csm/inputdata/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_c101029_ESMFmesh_120520.nc
+file1 = /fs/cgd/csm/inputdata/atm/cam/sst/sst_HadOIBl_bc_1x1_1850_2021_c120422.nc
