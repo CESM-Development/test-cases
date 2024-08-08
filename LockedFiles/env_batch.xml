@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<file id="env_batch.xml" version="2.0">
+  <header>
+      These variables may be changed anytime during a run, they
+      control arguments to the batch submit command.
+    </header>
+  <group id="config_batch">
+    <entry id="BATCH_SYSTEM" value="pbs">
+      <type>char</type>
+      <valid_values>nersc_slurm,lc_slurm,moab,pbs,lsf,slurm,cobalt,cobalt_theta,none</valid_values>
+      <desc>The batch system type to use for this machine.</desc>
+    </entry>
+  </group>
+  <batch_system type="pbs">
+    <batch_query args="-f">qstat</batch_query>
+    <batch_submit>qsub </batch_submit>
+    <batch_cancel>qdel</batch_cancel>
+    <batch_env>-v</batch_env>
+    <batch_directive>#PBS</batch_directive>
+    <jobid_pattern>^(\S+)$</jobid_pattern>
+    <depend_string> -W depend=afterok:jobid</depend_string>
+    <depend_allow_string> -W depend=afterany:jobid</depend_allow_string>
+    <depend_separator>:</depend_separator>
+    <walltime_format>%H:%M:%S</walltime_format>
+    <batch_mail_flag>-M</batch_mail_flag>
+    <batch_mail_type_flag>-m</batch_mail_type_flag>
+    <batch_mail_type>, bea, b, e, a</batch_mail_type>
+    <submit_args>
+      <argument> -q $JOB_QUEUE</argument>
+      <argument> -l walltime=$JOB_WALLCLOCK_TIME</argument>
+      <argument> -A $PROJECT</argument>
+    </submit_args>
+    <directives>
+      <directive>-N {{ job_id }}</directive>
+      <directive default="n"> -r {{ rerunnable }} </directive>
+      <directive> -j oe </directive>
+    </directives>
+  </batch_system>
+  <batch_system MACH="izumi" type="pbs">
+    <batch_submit>qsub</batch_submit>
+    <jobid_pattern>(\d+.izumi.cgd.ucar.edu)$</jobid_pattern>
+    <directives>
+      <directive>-l nodes={{ num_nodes }}:ppn={{ tasks_per_node }}</directive>
+      <directive default="/bin/bash"> -S {{ shell }}  </directive>
+      <directive> -V </directive>
+    </directives>
+    <queues>
+      <queue nodemax="8" nodemin="1" strict="true" walltimemax="02:00:00">short</queue>
+      <queue default="true" nodemax="6" nodemin="1" strict="true" walltimemax="08:00:00">medium</queue>
+      <queue nodemax="8" nodemin="1" strict="true" walltimemax="40:00:00">long</queue>
+      <queue nodemax="8" nodemin="1" strict="true" walltimemax="120:00:00">verylong</queue>
+      <queue nodemax="14" nodemin="1" strict="true" walltimemax="32:00:00">overnight</queue>
+      <queue nodemax="14" nodemin="1" strict="true" walltimemax="3000:00:00">monster</queue>
+    </queues>
+  </batch_system>
+</file>

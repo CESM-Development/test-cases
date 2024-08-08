@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<file id="env_mach_specific.xml" version="2.0">
+  <header>
+    These variables control the machine dependent environment including
+    the paths to compilers and libraries external to cime such as netcdf,
+    environment variables for use in the running job should also be set	here.
+    </header>
+  <group id="compliant_values">
+    <entry id="run_exe" value="${EXEROOT}/cesm.exe ">
+      <type>char</type>
+      <desc>executable name</desc>
+    </entry>
+    <entry id="run_misc_suffix" value=" &gt;&gt; cesm.log.$LID 2&gt;&amp;1 ">
+      <type>char</type>
+      <desc>redirect for job output</desc>
+    </entry>
+  </group>
+  <module_system allow_error="true" type="module">
+    <init_path lang="perl">/usr/share/Modules/init/perl.pm</init_path>
+    <init_path lang="python">/usr/share/Modules/init/python.py</init_path>
+    <init_path lang="csh">/usr/share/Modules/init/csh</init_path>
+    <init_path lang="sh">/usr/share/Modules/init/sh</init_path>
+    <cmd_path lang="perl">/usr/bin/modulecmd perl</cmd_path>
+    <cmd_path lang="python">/usr/bin/modulecmd python</cmd_path>
+    <cmd_path lang="csh">module</cmd_path>
+    <cmd_path lang="sh">module</cmd_path>
+    <modules>
+      <command name="purge"/>
+      <command name="load">lang/python/3.11.5</command>
+      <command name="use">/fs/cgd/data0/modules/modulefiles</command>
+    </modules>
+    <modules compiler="gnu">
+      <command name="load">compiler/gnu/9.3.0</command>
+      <command name="load">tool/netcdf/4.7.4/gnu/9.3.0</command>
+    </modules>
+    <modules compiler="gnu" mpilib="openmpi">
+      <command name="load">openmpi/4.0.3/gnu/9.3.0</command>
+    </modules>
+    <modules compiler="gnu" mpilib="mvapich2">
+      <command name="load">mpi/2.3.3/gnu/9.3.0</command>
+    </modules>
+    <modules compiler="intel">
+      <command name="load">compiler/intel/20.0.1</command>
+      <command name="load">tool/netcdf/4.7.4/intel/20.0.1</command>
+    </modules>
+    <modules compiler="intel" mpilib="mvapich2">
+      <command name="load">mpi/2.3.3/intel/20.0.1</command>
+    </modules>
+    <modules compiler="nag">
+      <command name="load">compiler/nag/6.2-8.1.0</command>
+      <command name="load">tool/netcdf/c4.6.1-f4.4.4/nag-gnu/6.2-8.1.0</command>
+    </modules>
+    <modules compiler="nag" mpilib="mvapich2">
+      <command name="load">mpi/2.3.3/nag/6.2</command>
+    </modules>
+    <modules compiler="nag" mpilib="mpi-serial">
+      <command name="rm">mpi</command>
+    </modules>
+    <modules DEBUG="FALSE" compiler="gnu" mpilib="mvapich2">
+      <command name="load">esmfpkgs/gfortran/9.3.0/esmf-8.5.0-ncdfio-mvapich2-O</command>
+      <command name="load">mvapich2/2.3.3/gnu/9.3.0/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="TRUE" compiler="gnu" mpilib="mvapich2">
+      <command name="load">esmfpkgs/gfortran/9.3.0/esmf-8.5.0-ncdfio-mvapich2-g</command>
+      <command name="load">mvapich2/2.3.3/gnu/9.3.0/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="FALSE" compiler="gnu" mpilib="mpi-serial">
+      <command name="load">esmfpkgs/gfortran/9.3.0/esmf-8.5.0-ncdfio-mpiuni-O</command>
+      <command name="load">mpi-serial/2.3.0/gnu/9.3.0/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="TRUE" compiler="gnu" mpilib="mpi-serial">
+      <command name="load">esmfpkgs/gfortran/9.3.0/esmf-8.5.0-ncdfio-mpiuni-g</command>
+      <command name="load">mpi-serial/2.3.0/gnu/9.3.0/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="FALSE" compiler="nag" mpilib="mvapich2">
+      <command name="load">esmfpkgs/nag/6.2/esmf-8.5.0-ncdfio-mvapich2-O</command>
+      <command name="load">mvapich2/2.3.3/nag/6.2/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="TRUE" compiler="nag" mpilib="mvapich2">
+      <command name="load">esmfpkgs/nag/6.2/esmf-8.5.0-ncdfio-mvapich2-g</command>
+      <command name="load">mvapich2/2.3.3/nag/6.2/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="TRUE" compiler="nag" mpilib="mpi-serial">
+      <command name="load">esmfpkgs/nag/6.2/esmf-8.5.0-ncdfio-mpiuni-g</command>
+      <command name="load">mpi-serial/2.3.0/nag/6.2/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="FALSE" compiler="nag" mpilib="mpi-serial">
+      <command name="load">esmfpkgs/nag/6.2/esmf-8.5.0-ncdfio-mpiuni-O</command>
+      <command name="load">mpi-serial/2.3.0/nag/6.2/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="TRUE" compiler="intel" mpilib="mpi-serial">
+      <command name="load">esmfpkgs/intel/20.0.1/esmf-8.5.0-ncdfio-mpiuni-g</command>
+      <command name="load">mpi-serial/2.3.0/intel/20.0.1/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="FALSE" compiler="intel" mpilib="mpi-serial">
+      <command name="load">esmfpkgs/intel/20.0.1/esmf-8.5.0-ncdfio-mpiuni-O</command>
+      <command name="load">mpi-serial/2.3.0/intel/20.0.1/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="TRUE" compiler="intel" mpilib="mvapich2">
+      <command name="load">esmfpkgs/intel/20.0.1/esmf-8.5.0-ncdfio-mvapich2-g</command>
+      <command name="load">mvapich2/2.3.3/intel/20.0.1/pio/2_5_10</command>
+    </modules>
+    <modules DEBUG="FALSE" compiler="intel" mpilib="mvapich2">
+      <command name="load">esmfpkgs/intel/20.0.1/esmf-8.5.0-ncdfio-mvapich2-O</command>
+      <command name="load">mvapich2/2.3.3/intel/20.0.1/pio/2_5_10</command>
+    </modules>
+  </module_system>
+  <environment_variables>
+    <env name="OMP_STACKSIZE">64M</env>
+    <env name="PATH">$ENV{PATH}:/cluster/torque/bin</env>
+  </environment_variables>
+  <resource_limits>
+    <resource name="RLIMIT_STACK">-1</resource>
+  </resource_limits>
+  <mpirun mpilib="mvapich2">
+    <executable>mpiexec</executable>
+    <arguments>
+      <arg name="machine_file">--machinefile $ENV{PBS_NODEFILE}</arg>
+      <arg name="num_tasks"> -n {{ total_tasks }} </arg>
+    </arguments>
+  </mpirun>
+  <mpirun mpilib="openmpi">
+    <executable>mpiexec</executable>
+    <arguments>
+      <arg name="num_tasks"> -n {{ total_tasks }} </arg>
+      <arg name="addrank"> --tag-output </arg>
+    </arguments>
+  </mpirun>
+</file>
