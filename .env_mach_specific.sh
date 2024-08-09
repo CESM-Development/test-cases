@@ -3,7 +3,6 @@
 # Changes to the environment should be made in env_mach_specific.xml
 # Run ./case.setup --reset to regenerate this file
 . /opt/apps/lmod/lmod/init/sh
-module purge 
 module load TACC nvidia openmpi/5.0.3
 export OMP_STACKSIZE=256M
 export NETCDF_PATH=/scratch/00422/cazes/vista_netcdf_install/netcdf_4.9.2_nvhpc/
