@@ -15,3 +15,5 @@ err=Can't locate XML/LibXML.pm in @INC (you may need to install the XML::LibXML 
 BEGIN failed--compilation aborted at /work/02503/edwardsj/cesm3_0_x/cime/utils/perl5lib/Config/SetupTools.pm line 5.
 Compilation failed in require at /work/02503/edwardsj/cesm3_0_x/components/clm/bld/CLMBuildNamelist.pm line 421.
  ---------------------------------------------------
+2024-08-09 11:39:32: case.build starting 
+ ---------------------------------------------------
