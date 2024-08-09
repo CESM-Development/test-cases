@@ -1,0 +1,6 @@
+mesh_mask = /work2/02503/edwardsj/CESM/inputdata/share/meshes/gx1v7_151008_ESMFmesh.nc
+mesh_atm = /work2/02503/edwardsj/CESM/inputdata/share/meshes/ne30pg3_ESMFmesh_cdf5_c20211018.nc
+mesh_ice = /work2/02503/edwardsj/CESM/inputdata/share/meshes/ne30pg3_ESMFmesh_cdf5_c20211018.nc
+mesh_lnd = /work2/02503/edwardsj/CESM/inputdata/share/meshes/ne30pg3_ESMFmesh_cdf5_c20211018.nc
+mesh_ocn = /work2/02503/edwardsj/CESM/inputdata/share/meshes/ne30pg3_ESMFmesh_cdf5_c20211018.nc
+mesh_rof = /work2/02503/edwardsj/CESM/inputdata/share/meshes/r05_nomask_c110308_ESMFmesh.nc
